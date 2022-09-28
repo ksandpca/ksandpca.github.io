@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<link type ="text/css" rel= "stylesheet" href="styles.css"/>
+		<title>Kerrianne's Practice Website</title>
+	</head>
+	<body>
+		<nav>
+			<div class="navbar">
+				<ul>
+					<li><a href ="index.html">Home</a></li>
+					<li><a href ="first-foods.html">Our Journey</a></li> 
+					<li><a href ="gallery.html">Gallery</a></li>
+					<li><a href ="video.html">Video</a></li>
+					<li><a href ="contact.html">Contact Me</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<h1>Welcome to My Site!</h1>
+		<p>Hello. I am Kerrianne, a web development student at Phoenix Computer Academy and am just learning to code in HTML, CSS, and Javascript.  This is my first website, and I am practicing what I am learning in my courses</p>
+		<p>In my previous career, I was an adjunct professor who taught nutrition and exercise science, and I am also a mom to a wonderful 8 month old little boy named James who had just started solid foods around the same time I started PCA. My goal with this website is to help other moms by sharing our experience with 'baby-led weaning' and my perspective as a former nutrition educator</p>
+		<figure>
+			<img src= "images/james-2.jpg" id="pic" alt= "James Enjoying Breakfast: Then vs. Now" height="25%" width="25%">
+			<script>
+				var homePic = document.getElementById("pic");
+				function nowPic() {
+			      homePic.src = "images/james-7.jpg";
+			   }
+			   function thenPic() {
+			     homePic.src = "images/james-2.jpg";
+			   }
+			   homePic.onmouseover = nowPic;
+			   homePic.onmouseout = thenPic;
+			</script>
+			<figcaption>"James Enjoying Breakfast: Then vs. Now"</figcaption>
+		</figure>
+		<p>(Mouseover this image of James enjoying one of his first baby-led weaning breakfasts to see how he's doing now).</p> 
+		<footer> 
+			<p id="footer">Copyright Kerrianne Sand</p>
+		</footer>
+	</body> 
+</html>
